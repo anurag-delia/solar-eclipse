@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.universe{
+    width: 40vw;
+    aspect-ratio: 1;
+    background-color:  #D9C09C;
+    border-radius: 12px;
+    /* position: relative; */
+    display: flex;
+    animation: bal 10s ease-in-out infinite;
+}
+
+@keyframes bal{
+    
+    50%{
+        background-color: #000000;
+    }
+}
+
+
+.sun{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #FC9601;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}  
+
+.sun::after{
+    content: '';
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        background-color: #8a7f8d;
+        border-radius: 50%;
+        animation: moonwalkk 10s ease-in-out infinite;
+}
+
+
+/* .moon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    animation: moonwalkk 10s ease-in-out infinite;
+    overflow: hidden;
+} */
+
+@keyframes moonwalkk {
+    0%{
+        translate: 100%;
+        scale: 1;
+    }
+    50%{
+        translate: 0%;
+        scale: 0.9;
+        background-color: black;
+    }
+    100%{
+        translate: -100%;
+        scale: 0.9;
+    }
+}
