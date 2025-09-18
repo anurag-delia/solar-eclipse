@@ -42,7 +42,15 @@ body{
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-}  
+    animation: don 10s ease-in-out infinite;
+}
+
+@keyframes don{
+    50%{
+      border: 2px solid yellow;
+    filter: blur(8px); 
+    }
+}
 
 .sun::after{
     content: '';
@@ -83,4 +91,5 @@ body{
         scale: 0.9;
     }
 }
+
 
