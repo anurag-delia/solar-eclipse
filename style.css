@@ -13,7 +13,7 @@ body{
 }
 
 .universe{
-    width: 40vw;
+    width: 80vw;
     aspect-ratio: 1;
     background-color:  #D9C09C;
     border-radius: 12px;
@@ -36,8 +36,8 @@ body{
     left: 50%;
     transform: translate(-50%,-50%); */
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background-color: #FC9601;
     border-radius: 50%;
     position: relative;
@@ -46,8 +46,8 @@ body{
 
 .sun::after{
     content: '';
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         position: absolute;
         background-color: #8a7f8d;
         border-radius: 50%;
@@ -83,3 +83,4 @@ body{
         scale: 0.9;
     }
 }
+
